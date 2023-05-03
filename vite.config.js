@@ -1,21 +1,3 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
-import legacy from '@vitejs/plugin-legacy'
-import sveltePreprocess from 'svelte-preprocess';
+import xKit from 'x-kit/scripts/bundle'
 
-export default defineConfig({
-  server: {
-    port: 4000
-  },
-  resolve: {
-    extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json', '.svelte', '.css', '.scss', '.sass']
-  },
-  plugins: [
-    legacy({
-      targets: ['defaults'],
-    }),
-    svelte({
-      preprocess: sveltePreprocess()
-    }),
-  ]
-});
+export default xKit(import.meta.url);
