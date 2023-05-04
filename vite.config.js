@@ -1,3 +1,3 @@
-import xKit from 'x-kit/scripts/bundle'
+import xKit from 'x-kit'
 
 export default xKit(import.meta.url);
