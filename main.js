@@ -1,11 +1,10 @@
-import { reactive } from 'x-kit/scripts/utils'
-//import { writable } from 'svelte/store';
-import { onUpdate } from 'x-kit/scripts/events'
-import Tempo from 'x-kit/widgets/tempo/tempo'
+import { reactive } from 'sp-dev-x-kit/scripts/utils'
+import { onUpdate } from 'sp-dev-x-kit/scripts/events'
+import Tempo from 'sp-dev-x-kit/widgets/tempo/tempo.svelte'
 
 let app, done;
 
-const widget = reactive({//writable({
+const widget = reactive({
     lite: true
 })
 
