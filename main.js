@@ -1,6 +1,6 @@
 import { reactive } from 'sp-dev-x-kit/scripts/utils'
 import { onUpdate } from 'sp-dev-x-kit/scripts/events'
-import Tempo from 'sp-dev-x-kit/widgets/tempo/tempo.svelte'
+import component from 'sp-dev-x-kit/widgets/mapa'
 
 let app, done;
 
@@ -10,9 +10,9 @@ const widget = reactive({
 
 done = onUpdate(() => {
     if (app) return !done ? null : done();
-    const target = document.getElementById('bsu-placeholder');
+    const target = document.getElementById('example');
     if (!target) return;
-    app = new Tempo({
+    app = new component({
         target,
         props: {
             widget
