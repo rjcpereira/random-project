@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
-    "sp-dev-x-kit": "^1.2.3"
+    "sp-dev-x-kit": "^1.2.4"
   },
   "scripts": {
     "dev": "vite dev",

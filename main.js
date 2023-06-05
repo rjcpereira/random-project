@@ -5,7 +5,7 @@ import component from 'sp-dev-x-kit/widgets/mapa'
 let app, done;
 
 const widget = reactive({
-    lite: true
+    zoomable: true
 })
 
 done = onUpdate(() => {
